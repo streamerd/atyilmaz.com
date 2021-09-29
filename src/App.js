@@ -90,7 +90,7 @@ function App() {
       </Paragraph>
       <Paragraph>
       building a <Anchor 
-            href="https://stateful.art"
+            href="#"
             target="_blank"
             color="red">
           decentralized future
