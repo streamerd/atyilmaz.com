@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { Box, Grommet, Image, Anchor, Paragraph } from 'grommet';
-
+import { CaretDown, Directions } from 'grommet-icons';
 import React from 'react';
 
 const theme = {
@@ -17,6 +17,7 @@ const theme = {
 
 const FooterSection = () => (
   <>
+  <Box direction="column">
   <Box
     tag='footer'
     direction='row'
@@ -24,7 +25,7 @@ const FooterSection = () => (
     pad='small'
     gap='small'
 
-    // flex={true}
+    //flex={true}
     background='black'>
 
 <   Anchor 
@@ -34,12 +35,26 @@ const FooterSection = () => (
     <Anchor 
             href="https://behance.net/atyilmaz"
             target="_blank"
-            color="white">visual arts</Anchor> | 
+            color="white">visual</Anchor> | 
             
     <Anchor href="https://ampled.com/artist/streamerd"
             target="_blank"
-            color="white">music</Anchor> | 
+            color="white"
+            >music</Anchor> |
+    <Anchor href="https://ampled.com/artist/streamerd"
+            target="_blank"
+            color="white">blog</Anchor>     
+  </Box>
 
+  <Box
+    tag='footer'
+    direction='row'
+    justify='center'
+    pad='small'
+    gap='small'
+
+    //flex={true}
+    background='black'>
     <Anchor href="https://twitter.com/_streamerd"
             target="_blank"
             color="white">twitter</Anchor> | 
@@ -47,9 +62,17 @@ const FooterSection = () => (
     <Anchor href="https://instagram.com/streamerd_"
             target="_blank"
             color="white">instagram</Anchor>
+ 
     
 
      
+  </Box>
+
+
+  <Box align="center" justify="center">
+  <Directions color="red"/>
+  © all rights left
+  </Box>
   </Box>
   </>
   
@@ -58,9 +81,9 @@ const FooterSection = () => (
 
 function App() {
   return (
-    <Grommet theme={theme} full>
+    <Grommet theme={theme}>
        
-     <Box justify="top" align="center" background="black" fill>
+     <Box align="center" background="black" fill>
      <Box direction="column" align="center" background="black" fill>
 
       <Image src="./at_at_street.png" 
@@ -69,36 +92,56 @@ function App() {
               margin="50px">
       </Image>
 
-      <Paragraph justify="center">
+      <Paragraph align="center">
       abbas tolgay yılmaz
+      <br></br>
+
       </Paragraph>
 
-      <Paragraph>
-      design-thinker, software developer, artist
+      <Paragraph align="center">
+      software developer, artist
       </Paragraph>
 
-      <Paragraph>
-        -------------
-      </Paragraph>
 
-      <Paragraph>
-        "the revolution will be minted"
-      </Paragraph>
-
-      <Paragraph>
-        -------------
-      </Paragraph>
-      <Paragraph>
-      building a <Anchor 
-            href="#"
-            target="_blank"
-            color="red">
-          decentralized future
-          </Anchor> <br></br>
-      </Paragraph>    
-     </Box>
+      <Box>.</Box>
+      <Box>.</Box>
+      <Box>.</Box>
+      <Box>.</Box>
         
-     <FooterSection/>
+      <Paragraph>
+       <Anchor 
+            href="#"
+            // target="_blank"
+            color="white">
+          building a decentralized future,
+          </Anchor>
+      </Paragraph>  
+
+      <Paragraph color="white">with {" "}
+      <Anchor href="#"
+              target="_blank"
+              color="red"> 
+               stateful.art 
+      </Anchor>
+        </Paragraph> 
+        <Paragraph>
+        ~ soon ~
+        </Paragraph>
+
+     </Box>
+        <Box>.</Box>
+        <Box>.</Box>
+        <Box>.</Box>
+        <Box>.</Box>
+        <Paragraph>
+           the revolution will be minted.
+        </Paragraph>
+        <Box>.</Box>
+        <Box>.</Box>
+        <Box>.</Box>
+        <Box> <CaretDown color="yellow"/></Box>
+
+        <FooterSection/>
      </Box>
 
 
