@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-import { Box, Grommet, Image, Anchor, Paragraph } from 'grommet';
+import { Box, Grommet, Image, Anchor, Paragraph, Text } from 'grommet';
 import { CaretDown, Directions } from 'grommet-icons';
 import React from 'react';
 
@@ -31,19 +31,22 @@ const FooterSection = () => (
 <   Anchor 
             href="https://github.com/streamerd"
             target="_blank"
-            color="white">code</Anchor> | 
+            color="white"
+            size="small">code</Anchor> | 
     <Anchor 
             href="https://behance.net/atyilmaz"
             target="_blank"
-            color="white">visual</Anchor> | 
+            color="white"
+            size="small">visual</Anchor> | 
             
     <Anchor href="https://ampled.com/artist/streamerd"
             target="_blank"
             color="white"
-            >music</Anchor> |
-    <Anchor href="https://ampled.com/artist/streamerd"
+            size="small"
+            >music</Anchor>
+    {/* <Anchor href="https://medium.com/@streamerd"
             target="_blank"
-            color="white">blog</Anchor>     
+            color="white">blog</Anchor>      */}
   </Box>
 
   <Box
@@ -57,11 +60,13 @@ const FooterSection = () => (
     background='black'>
     <Anchor href="https://twitter.com/_streamerd"
             target="_blank"
-            color="white">twitter</Anchor> | 
+            color="white"
+            size="small">twitter</Anchor> | 
 
     <Anchor href="https://instagram.com/streamerd_"
             target="_blank"
-            color="white">instagram</Anchor>
+            color="white"
+            size="small">instagram</Anchor>
  
     
 
@@ -71,7 +76,7 @@ const FooterSection = () => (
 
   <Box align="center" justify="center">
   <Directions color="red"/>
-  © all rights left
+  <Text size="small"> © all rights left </Text>
   </Box>
   </Box>
   </>
