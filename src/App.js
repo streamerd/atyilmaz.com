@@ -115,11 +115,11 @@ function App() {
       <Box>.</Box>
         
       <Paragraph>
+        building a decentralized future,
        <Anchor 
             href="#"
-            // target="_blank"
+            target="_blank"
             color="white">
-          building a decentralized future,
           </Anchor>
       </Paragraph>  
 
