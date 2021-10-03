@@ -91,6 +91,7 @@ function App() {
      <Box align="center" background="black" fill>
      <Box direction="column" align="center" background="black" fill>
 
+
       <Image src="./at_at_street.png" 
               width="262" 
               height="234px"
@@ -123,7 +124,7 @@ function App() {
       </Paragraph>  
 
       <Paragraph color="white">with {" "}
-      <Anchor href="#"
+      <Anchor href="https://stateful.art"
               target="_blank"
               color="red"> 
                stateful.art 
