@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { Box, Grommet, Image, Anchor, Paragraph, Text } from 'grommet';
-import { CaretDown, Directions } from 'grommet-icons';
+import { CaretDown, CaretUp, Directions } from 'grommet-icons';
 import React from 'react';
 
 const theme = {
@@ -12,8 +12,6 @@ const theme = {
       }
   }
 };
-
-
 
 const FooterSection = () => (
   <>
@@ -49,6 +47,35 @@ const FooterSection = () => (
             color="white">blog</Anchor>      */}
   </Box>
 
+
+  {/* <Box
+    tag='footer'
+    direction='row'
+    justify='center'
+    pad='small'
+    gap='small'
+
+    //flex={true}
+    background='black'>
+    <Anchor href=""
+            target="_blank"
+            color="white"
+            size="small">projects</Anchor> | 
+
+    <Anchor href=""
+            target="_blank"
+            color="white"
+            size="small">writings</Anchor> */}
+{/* 
+<Anchor href=""
+            target="_blank"
+            color="white"
+            size="small">designs</Anchor> */}
+ 
+  {/* </Box> */}
+
+
+
   <Box
     tag='footer'
     direction='row'
@@ -68,9 +95,19 @@ const FooterSection = () => (
             color="white"
             size="small">instagram</Anchor>
  
-    
+  </Box>
 
-     
+  <Box
+    tag='footer'
+    direction='row'
+    justify='center'
+    pad='small'
+    gap='small'
+
+    //flex={true}
+    background='black'>
+    <Text size="middle">tolgay@atyilmaz.com</Text>
+ 
   </Box>
 
 
@@ -105,7 +142,7 @@ function App() {
       </Paragraph>
 
       <Paragraph align="center">
-      software developer, artist
+      software developer, artist, someone.
       </Paragraph>
 
 
@@ -116,14 +153,9 @@ function App() {
         
       <Paragraph>
         building a decentralized future,
-       <Anchor 
-            href="#"
-            target="_blank"
-            color="white">
-          </Anchor>
       </Paragraph>  
 
-      <Paragraph color="white">with {" "}
+      <Paragraph color="white">at {" "}
       <Anchor href="https://stateful.art"
               target="_blank"
               color="red"> 
@@ -145,13 +177,11 @@ function App() {
         <Box>.</Box>
         <Box>.</Box>
         <Box>.</Box>
-        <Box> <CaretDown color="yellow"/></Box>
+        <Box> <CaretUp color="yellow"/></Box>
 
         <FooterSection/>
      </Box>
 
-
-     
     </Grommet>
   );
 }
