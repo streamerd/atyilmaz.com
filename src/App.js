@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { Box, Grommet, Image, Anchor, Paragraph, Text } from 'grommet';
-import { CaretDown, CaretUp, Directions } from 'grommet-icons';
+import { CaretUp, Directions } from 'grommet-icons';
 import React from 'react';
 
 const theme = {
