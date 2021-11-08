@@ -16,6 +16,21 @@ const theme = {
 const FooterSection = () => (
   <>
   <Box direction="column">
+
+  <Box
+    tag='footer'
+    direction='row'
+    justify='center'
+    pad='small'
+    gap='small'
+    //flex={true}
+    background='black'> 
+    <Anchor 
+            href="https://atyilmaz.substack.com"
+            target="_blank"
+            color="white"
+            size="small">writings (soon)</Anchor>
+    </Box> 
   <Box
     tag='footer'
     direction='row'
