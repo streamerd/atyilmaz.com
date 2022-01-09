@@ -1198,10 +1198,8 @@ const RabbitHoledCard = () => {
                   ></Image>
                 </Box>
                 <Box align="center" margin={"medium"}>
-                  <Text size="small"> Abbas Tolgay </Text> <br></br>
-                  <Text color="black" size="small">
-                    Yılmaz
-                  </Text>
+                  <Text size="small"  color="black"> Abbas Tolgay </Text> <br></br>
+                  Yılmaz
                 </Box>
               </Box>
             </CardBody>
@@ -1223,10 +1221,10 @@ const RabbitHoledCard = () => {
                   ></Image>
                 </Box>
                 <Box align="center" margin={"medium"}>
-                  <Text size="large"> Abbas Tolgay </Text> <br></br>
-                  <Text color="black" size="large">
-                    Yılmaz
-                  </Text>
+                <Text size="large" color="black"> Abbas Tolgay </Text> <br></br>
+                <Text size="large"  color="black"> Yılmaz</Text>
+
+                 
                 </Box>
               </Box>
             </CardBody>
