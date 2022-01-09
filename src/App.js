@@ -178,9 +178,14 @@ const MoondogCarousel = () => {
             </Carousel>
           </Box>
         ) : (
-          <Box>
+          <Box background={"black"}>
             <Carousel>
-              <Box background="black">
+              <Box background="black" size="large"
+                animation={{
+                  type: "rotateRight",
+                  delay: 1000,
+                  duration: 24000,
+                }}>
                 {/* <Attraction size="xlarge" /> */}
                 <Image
                   src="./artProjects/moondog/a_tribute_to_moondog_angle_1.jpeg"
@@ -485,6 +490,13 @@ const ImpactProjectCards = () => {
                   hoverIndicator
                 ></Anchor>
 
+
+                <Anchor
+                  href="https://twitter.com/statefulArt"
+                  target={"_blank"}
+                  icon={<Twitter color="#1DA1F2" />}
+                  hoverIndicator
+                ></Anchor>
                 <Anchor
                   href="https://github.com/stateful-art/"
                   target={"_blank"}
@@ -495,13 +507,6 @@ const ImpactProjectCards = () => {
                       width={"24px"}
                     ></Image>
                   }
-                ></Anchor>
-
-                <Anchor
-                  href="https://twitter.com/statefulArt"
-                  target={"_blank"}
-                  icon={<Twitter color="#1DA1F2" />}
-                  hoverIndicator
                 ></Anchor>
               </CardFooter>
             </Card>
@@ -613,6 +618,12 @@ const ImpactProjectCards = () => {
                         target={"_blank"}
                         icon={<Cursor color="black" />}
                       ></Anchor>
+                        
+                                              <Anchor
+                                                href="https://twitter.com/statefulArt"
+                                                target={"_blank"}
+                                                icon={<Twitter color="#1DA1F2" />}
+                                              ></Anchor>
                       <Anchor
                         href="https://github.com/stateful-art/"
                         target={"_blank"}
@@ -630,14 +641,8 @@ const ImpactProjectCards = () => {
                           ></Image>
                         }
                       ></Anchor>
-
                       <Anchor
-                        href="https://twitter.com/statefulArt"
-                        target={"_blank"}
-                        icon={<Twitter color="#1DA1F2" />}
-                      ></Anchor>
-                      <Anchor
-                        href="https://twitter.com/statefulArt"
+                        href="https://miro.com/app/board/uXjVOXeggvw=/?invite_link_id=88536124274"
                         target={"_blank"}
                         icon={<Stakeholder color="black" />}
                       />
@@ -725,7 +730,7 @@ const ImpactProjectCards = () => {
                     align="center"
                     round="medium"
                     animation={{
-                      type: "rotateLeft",
+                      type: "slideLeft",
                       delay: 0,
                       duration: 24000,
                     }}
@@ -828,6 +833,13 @@ const ImpactProjectCards = () => {
                           ></Image>
                         }
                       ></Anchor>
+
+<Anchor
+                        href="https://twitter.com/demoversal"
+                        target={"_blank"}
+                        icon={<Github color="black" />}
+                      ></Anchor>
+
 
                       <Anchor
                         href="https://www.canva.com/design/DAEzMwHd49w/tVI1DwxiQMc1UNnP-UnCBw/view?utm_content=DAEzMwHd49w&utm_cam"
