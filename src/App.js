@@ -78,7 +78,13 @@ function App() {
           // margin={"xlarge"}
           gap="medium"
         >
-          <Box align="start" margin={"42px"} direction="column" pad={"small"} gap="large">
+          <Box
+            align="start"
+            margin={"42px"}
+            direction="column"
+            pad={"small"}
+            gap="large"
+          >
             <RabbitHoledCard />
             <Links />
           </Box>
@@ -353,7 +359,7 @@ const VisualArtworkCards = () => {
 
                     <CardBody background="black">
                       <Anchor
-                        href="https://opensea.io/assets/0xc709999489abbb567b8ae8d40ba91930990e7900/5"
+                        href="https://www.behance.net/gallery/108623373/Selbstportrait-und-Kater"
                         target={"_blank"}
                         icon={
                           <Image
@@ -480,6 +486,18 @@ const ImpactProjectCards = () => {
                 ></Anchor>
 
                 <Anchor
+                  href="https://github.com/stateful-art/"
+                  target={"_blank"}
+                  icon={
+                    <Image
+                      src="./discord-logo.png"
+                      height={"24px"}
+                      width={"24px"}
+                    ></Image>
+                  }
+                ></Anchor>
+
+                <Anchor
                   href="https://twitter.com/statefulArt"
                   target={"_blank"}
                   icon={<Twitter color="#1DA1F2" />}
@@ -602,6 +620,18 @@ const ImpactProjectCards = () => {
                       ></Anchor>
 
                       <Anchor
+                        href="https://discord.gg/QStRgcNJV7"
+                        target={"_blank"}
+                        icon={
+                          <Image
+                            src="./discord-logo.png"
+                            height={"24px"}
+                            width={"24px"}
+                          ></Image>
+                        }
+                      ></Anchor>
+
+                      <Anchor
                         href="https://twitter.com/statefulArt"
                         target={"_blank"}
                         icon={<Twitter color="#1DA1F2" />}
@@ -659,6 +689,17 @@ const ImpactProjectCards = () => {
                         href="https://twitter.com/entsAreback"
                         target={"_blank"}
                         icon={<Twitter color="#1DA1F2" />}
+                      ></Anchor>
+                      <Anchor
+                        href="https://discord.gg/fWunhCDhuy"
+                        target={"_blank"}
+                        icon={
+                          <Image
+                            src="./discord-logo.png"
+                            height={"24px"}
+                            width={"24px"}
+                          ></Image>
+                        }
                       ></Anchor>
                       <Anchor
                         href="https://miro.com/app/board/uXjVOX1nmp0=/?invite_link_id=922627502511"
@@ -775,6 +816,19 @@ const ImpactProjectCards = () => {
                         target={"_blank"}
                         icon={<Twitter color="#1DA1F2" />}
                       ></Anchor>
+
+                      <Anchor
+                        href="https://discord.gg/bdtUakkkUg"
+                        target={"_blank"}
+                        icon={
+                          <Image
+                            src="./discord-logo.png"
+                            height={"24px"}
+                            width={"24px"}
+                          ></Image>
+                        }
+                      ></Anchor>
+
                       <Anchor
                         href="https://www.canva.com/design/DAEzMwHd49w/tVI1DwxiQMc1UNnP-UnCBw/view?utm_content=DAEzMwHd49w&utm_cam"
                         target={"_blank"}
@@ -853,6 +907,17 @@ const ImpactProjectCards = () => {
                         icon={<Github color="black" />}
                         hoverIndicator
                       />
+                      <Anchor
+                        href="https://discord.gg/CD4Zk7Rcms"
+                        target={"_blank"}
+                        icon={
+                          <Image
+                            src="./discord-logo.png"
+                            height={"24px"}
+                            width={"24px"}
+                          ></Image>
+                        }
+                      ></Anchor>
                     </Box>
                   </CardFooter>
                 </Card>
