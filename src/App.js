@@ -297,17 +297,25 @@ const VisualArtworkCards = () => {
                   <Card height="medium" width="medium">
                     <CardHeader>
                       <Box direction="row" gap="medium" size="large">
-                        {/* <Anchor
-                  href=""
-                  target={"_blank"}
-                  // icon={<Cursor color="white" />}
-                 >devPunks</Anchor> */}
-                        <Text size="large" color={"pink"}>
+             
+                        <Text size="large" color={"red"}>
                           dev
-                          <Text size="large" color={"red"}>
+                          <Text size="large" color={"pink"}>
                             Punks
-                          </Text>
-                        </Text>
+                          </Text> 
+                          <Text size="large" color={"white"}>
+                          {"  "} collabs w/
+                          
+                            <Anchor
+                            color={"white"}
+                          href="https://discord.gg/Q2wWPVcQ6k"
+                          target={"_blank"}
+                          
+                        >BDU</Anchor>
+                          
+                            
+                          </Text> 
+                        </Text> 
 
                         <Anchor
                           href="https://github.com/BlockDevsUnited/dev-punks"
@@ -315,19 +323,19 @@ const VisualArtworkCards = () => {
                           icon={<Github color="white" />}
                         ></Anchor>
 
-                        <Anchor
+                        {/* <Anchor
                           href="https://opensea.io/collection/devpunks-v2"
                           target={"_blank"}
                           icon={
                             <Image src="./opensea-logo.svg" width={"24px"} />
                           }
-                        ></Anchor>
+                        ></Anchor> */}
                       </Box>
                     </CardHeader>
                     <CardBody background="black">
                       <Anchor></Anchor>
                       <Anchor
-                        href="https://opensea.io/assets/0xc709999489abbb567b8ae8d40ba91930990e7900/5"
+                        href="https://shy-meadow-1354.on.fleek.co/"
                         target={"_blank"}
                         icon={
                           <Image
@@ -679,7 +687,7 @@ const ImpactProjectCards = () => {
                   <CardBody background={"black"} pad="small">
                     {" "}
                     <Text textAlign="center" size="large">
-                      nature with stakes, in offset decision-making
+                      natural data having stake @ decision-making
                     </Text>
                   </CardBody>
 
@@ -1121,20 +1129,23 @@ const Links = () => {
                 //flex={true}
                 background="black"
               >
-                <Text size="medium">tolgay@atyilmaz.com</Text>
+                <Text textAlign="center" size="medium">tolgay@atyilmaz.com</Text>
               </Box>
             </Box>
           ) : (
             <Box direction="column">
+              
+              <Box direction="column">
+
               <Box
                 tag="footer"
                 direction="column"
                 justify="center"
-                pad="small"
-                gap="medium"
                 background="black"
               >
-                <Anchor
+                
+               <Box justify="center" direction="row" pad="medium" gap="medium">
+               <Anchor
                   href="https://github.com/streamerd"
                   target="_blank"
                   color="white"
@@ -1142,6 +1153,7 @@ const Links = () => {
                 >
                   github
                 </Anchor>
+
                 <Anchor
                   href="https://twitter.com/_streamerd"
                   target="_blank"
@@ -1150,7 +1162,15 @@ const Links = () => {
                 >
                   twitter
                 </Anchor>{" "}
-                <Anchor
+                </Box>
+
+
+               </Box>
+
+               <Box justify="center" direction="row" pad="medium" gap="medium">
+
+      
+              <Anchor
                   href="https://instagram.com/streamerd_"
                   target="_blank"
                   color="#C13584"
@@ -1167,24 +1187,27 @@ const Links = () => {
                   linkedIn
                 </Anchor>
               </Box>
+                
+              </Box>
               <Box
                 tag="footer"
-                direction="row"
+                direction="column"
                 pad="small"
-                gap="small"
+                gap="medium"
+                justify="center"
                 //flex={true}
                 background="black"
               >
                 <Text size="large">tolgay@atyilmaz.com</Text>
-              </Box>
-
-              <Box size="medium">
                 <Anchor href="https://github.com/streamerd" target={"_blank"}>
                   <Image
                     src="https://ghchart.rshah.org/streamerd"
-                    width={"480px"}
+                    width={"100%"}
                   ></Image>
                 </Anchor>
+              </Box>
+
+              <Box size="small">
               </Box>
             </Box>
           )
