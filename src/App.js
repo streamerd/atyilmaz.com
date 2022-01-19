@@ -840,6 +840,8 @@ const ImpactProjectCards = () => {
                       <Anchor
                         href="https://discord.gg/bdtUakkkUg"
                         target={"_blank"}
+                        referrerPolicy="noreferrer"
+
                         icon={
                           <Image
                             src="./discord-logo.png"
@@ -850,14 +852,17 @@ const ImpactProjectCards = () => {
                       ></Anchor>
 
                       <Anchor
-                        href="https://twitter.com/demoversal"
+                        href="https://github.com/demo-verse"
                         target={"_blank"}
+                        referrerPolicy="noreferrer"
                         icon={<Github color="black" />}
                       ></Anchor>
 
                       <Anchor
                         href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
                         target={"_blank"}
+                        referrerPolicy="noreferrer"
+
                         icon={<Stakeholder />}
                       ></Anchor>
                     </Box>
