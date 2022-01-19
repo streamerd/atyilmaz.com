@@ -813,6 +813,7 @@ const ImpactProjectCards = () => {
                       <a
                         href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
                         target={"_blank"}
+                        rel="noreferrer"
                         color="white"
                       >
                         <Image
