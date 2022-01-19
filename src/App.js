@@ -857,8 +857,8 @@ const ImpactProjectCards = () => {
                       <Anchor
                         href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
                         target={"_blank"}
-                        icon={<Actions />}
-                      />
+                        icon={<Stakeholder />}
+                      ></Anchor>
                     </Box>
                   </CardFooter>
                 </Card>
