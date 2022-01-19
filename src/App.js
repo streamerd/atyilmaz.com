@@ -180,12 +180,15 @@ const MoondogCarousel = () => {
         ) : (
           <Box background={"black"}>
             <Carousel>
-              <Box background="black" size="large"
+              <Box
+                background="black"
+                size="large"
                 animation={{
                   type: "rotateRight",
                   delay: 1000,
                   duration: 24000,
-                }}>
+                }}
+              >
                 {/* <Attraction size="xlarge" /> */}
                 <Image
                   src="./artProjects/moondog/a_tribute_to_moondog_angle_1.jpeg"
@@ -297,43 +300,41 @@ const VisualArtworkCards = () => {
                   <Card height="medium" width="medium">
                     <CardHeader>
                       <Box direction="row" gap="medium" size="large">
-             
-                        <Text size="large" color={"red"}>
-                          dev
-                          <Text size="large" color={"pink"}>
-                            Punks
-                          </Text> 
-                          <Text size="large" color={"white"}>
-                          {"  "} collabs w/
-                          
-                            <Anchor
-                            color={"white"}
-                          href="https://discord.gg/Q2wWPVcQ6k"
-                          target={"_blank"}
-                          
-                        >BDU</Anchor>
-                          
-                            
-                          </Text> 
-                        </Text> 
+                        {/* <Anchor
+                  href=""
+                  target={"_blank"}
+                  // icon={<Cursor color="white" />}
+                 >devPunks</Anchor> */}
 
+<Anchor  href="https://shy-meadow-1354.on.fleek.co/"
+                          target={"_blank"}
+                           >
+<Text size="large" color={"pink"}>
+                          dev
+                          <Text size="large" color={"red"}>
+                            Punks
+                          </Text>
+                        </Text>
+
+</Anchor>
+
+                        
                         <Anchor
                           href="https://github.com/BlockDevsUnited/dev-punks"
                           target={"_blank"}
                           icon={<Github color="white" />}
                         ></Anchor>
 
-                        {/* <Anchor
+                        <Anchor
                           href="https://opensea.io/collection/devpunks-v2"
                           target={"_blank"}
                           icon={
                             <Image src="./opensea-logo.svg" width={"24px"} />
                           }
-                        ></Anchor> */}
+                        ></Anchor>
                       </Box>
                     </CardHeader>
                     <CardBody background="black">
-                      <Anchor></Anchor>
                       <Anchor
                         href="https://shy-meadow-1354.on.fleek.co/"
                         target={"_blank"}
@@ -498,7 +499,6 @@ const ImpactProjectCards = () => {
                   hoverIndicator
                 ></Anchor>
 
-
                 <Anchor
                   href="https://twitter.com/statefulArt"
                   target={"_blank"}
@@ -626,12 +626,12 @@ const ImpactProjectCards = () => {
                         target={"_blank"}
                         icon={<Cursor color="black" />}
                       ></Anchor>
-                        
-                                              <Anchor
-                                                href="https://twitter.com/statefulArt"
-                                                target={"_blank"}
-                                                icon={<Twitter color="#1DA1F2" />}
-                                              ></Anchor>
+
+                      <Anchor
+                        href="https://twitter.com/statefulArt"
+                        target={"_blank"}
+                        icon={<Twitter color="#1DA1F2" />}
+                      ></Anchor>
                       <Anchor
                         href="https://github.com/stateful-art/"
                         target={"_blank"}
@@ -687,7 +687,7 @@ const ImpactProjectCards = () => {
                   <CardBody background={"black"} pad="small">
                     {" "}
                     <Text textAlign="center" size="large">
-                      natural data having stake @ decision-making
+                      nature with stakes, in offset decision-making
                     </Text>
                   </CardBody>
 
@@ -810,11 +810,17 @@ const ImpactProjectCards = () => {
                         duration: 1000,
                       }}
                     >
-                      <Image
-                        src="./impactProjects/demoverse-logo-transparent.png"
-                        height="160px"
-                        width="240px"
-                      ></Image>
+                      <a
+                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
+                        target={"_blank"}
+                        color="white"
+                      >
+                        <Image
+                          src="./impactProjects/demoverse-logo-transparent.png"
+                          height="160px"
+                          width="240px"
+                        ></Image>
+                      </a>
                     </Box>
                     <Text textAlign="center" size="large">
                       world peace as a service, on blockchain.
@@ -842,15 +848,14 @@ const ImpactProjectCards = () => {
                         }
                       ></Anchor>
 
-<Anchor
+                      <Anchor
                         href="https://twitter.com/demoversal"
                         target={"_blank"}
                         icon={<Github color="black" />}
                       ></Anchor>
 
-
                       <Anchor
-                        href="https://www.canva.com/design/DAEzMwHd49w/tVI1DwxiQMc1UNnP-UnCBw/view?utm_content=DAEzMwHd49w&utm_cam"
+                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
                         target={"_blank"}
                         icon={<Actions />}
                       />
@@ -1129,23 +1134,20 @@ const Links = () => {
                 //flex={true}
                 background="black"
               >
-                <Text textAlign="center" size="medium">tolgay@atyilmaz.com</Text>
+                <Text size="medium">tolgay@atyilmaz.com</Text>
               </Box>
             </Box>
           ) : (
             <Box direction="column">
-              
-              <Box direction="column">
-
               <Box
                 tag="footer"
                 direction="column"
                 justify="center"
+                pad="small"
+                gap="medium"
                 background="black"
               >
-                
-               <Box justify="center" direction="row" pad="medium" gap="medium">
-               <Anchor
+                <Anchor
                   href="https://github.com/streamerd"
                   target="_blank"
                   color="white"
@@ -1153,7 +1155,6 @@ const Links = () => {
                 >
                   github
                 </Anchor>
-
                 <Anchor
                   href="https://twitter.com/_streamerd"
                   target="_blank"
@@ -1162,15 +1163,7 @@ const Links = () => {
                 >
                   twitter
                 </Anchor>{" "}
-                </Box>
-
-
-               </Box>
-
-               <Box justify="center" direction="row" pad="medium" gap="medium">
-
-      
-              <Anchor
+                <Anchor
                   href="https://instagram.com/streamerd_"
                   target="_blank"
                   color="#C13584"
@@ -1187,27 +1180,24 @@ const Links = () => {
                   linkedIn
                 </Anchor>
               </Box>
-                
-              </Box>
               <Box
                 tag="footer"
-                direction="column"
+                direction="row"
                 pad="small"
-                gap="medium"
-                justify="center"
+                gap="small"
                 //flex={true}
                 background="black"
               >
                 <Text size="large">tolgay@atyilmaz.com</Text>
+              </Box>
+
+              <Box size="medium">
                 <Anchor href="https://github.com/streamerd" target={"_blank"}>
                   <Image
                     src="https://ghchart.rshah.org/streamerd"
-                    width={"100%"}
+                    width={"480px"}
                   ></Image>
                 </Anchor>
-              </Box>
-
-              <Box size="small">
               </Box>
             </Box>
           )
@@ -1233,7 +1223,11 @@ const RabbitHoledCard = () => {
                   ></Image>
                 </Box>
                 <Box align="center" margin={"medium"}>
-                  <Text size="small"  color="black"> Abbas Tolgay </Text> <br></br>
+                  <Text size="small" color="black">
+                    {" "}
+                    Abbas Tolgay{" "}
+                  </Text>{" "}
+                  <br></br>
                   Yılmaz
                 </Box>
               </Box>
@@ -1256,10 +1250,15 @@ const RabbitHoledCard = () => {
                   ></Image>
                 </Box>
                 <Box align="center" margin={"medium"}>
-                <Text size="large" color="black"> Abbas Tolgay </Text> <br></br>
-                <Text size="large"  color="black"> Yılmaz</Text>
-
-                 
+                  <Text size="large" color="black">
+                    {" "}
+                    Abbas Tolgay{" "}
+                  </Text>{" "}
+                  <br></br>
+                  <Text size="large" color="black">
+                    {" "}
+                    Yılmaz
+                  </Text>
                 </Box>
               </Box>
             </CardBody>
