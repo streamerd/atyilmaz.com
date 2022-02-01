@@ -583,64 +583,59 @@ const ImpactProjectCards = () => {
           <Box direction="column" gap="large">
             <Box direction="row" gap="medium">
               <Box direction="row" gap="medium">
-                <Card height="medium" width="medium" background="purple">
-                  <CardHeader pad="small">
-                    <Anchor href="https://stateful.art" target={"_blank"}>
-                      <Text textAlign="center" size="large" color={"white"}>
-                        stateful.art
-                      </Text>
-                    </Anchor>
-                  </CardHeader>
 
+              <Card height="medium" width="medium" background="white">
                   <CardBody background={"black"} pad="small">
                     <Box
                       align="center"
                       round="medium"
+                      pad={"small"}
                       animation={{
                         type: "pulse",
                         delay: 0,
                         duration: 1000,
                       }}
                     >
-                      {" "}
-                      <Image
-                        src="./impactProjects/start-no-logo-short.png"
-                        height="160px"
-                        width="160px"
-                      ></Image>
+
+                      
+                      <a
+                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        color="white"
+                      >
+                        <Image
+                          src="./impactProjects/demoverse-logo-transparent.png"
+                          height="160px"
+                          width="240px"
+                        ></Image>
+                      </a>
                     </Box>
                     <Text textAlign="center" size="large">
-                      connecting cities with <br></br>arts {"&"} rights
+                      world peace as a service, on blockchain.
+                      {/* <br></br>0 to billions to acknowledge, <br></br>0 to hundreds to seal it. */}
                     </Text>
                   </CardBody>
 
                   <CardFooter background="light-2">
-                    <Box
-                      direction="row"
-                      gap="medium"
-                      size="medium"
-                      pad={"xsmall"}
-                    >
-                      <Anchor
-                        href="https://stateful.art"
+                    <Box direction="row" gap="medium" size="large">
+
+                    <Anchor
+                        href="https://demover.se"
                         target={"_blank"}
                         icon={<Cursor color="black" />}
-                      ></Anchor>
-
+                      />
                       <Anchor
-                        href="https://twitter.com/statefulArt"
+                        href="https://twitter.com/demoversal"
                         target={"_blank"}
                         icon={<Twitter color="#1DA1F2" />}
                       ></Anchor>
-                      <Anchor
-                        href="https://github.com/stateful-art/"
-                        target={"_blank"}
-                        icon={<Github color="black" />}
-                      ></Anchor>
 
                       <Anchor
-                        href="https://discord.gg/QStRgcNJV7"
+                        href="https://discord.gg/bdtUakkkUg"
                         target={"_blank"}
+                        referrerPolicy="noreferrer"
+
                         icon={
                           <Image
                             src="./discord-logo.png"
@@ -649,11 +644,21 @@ const ImpactProjectCards = () => {
                           ></Image>
                         }
                       ></Anchor>
+
                       <Anchor
-                        href="https://miro.com/app/board/uXjVOXeggvw=/?invite_link_id=88536124274"
+                        href="https://github.com/demo-verse"
                         target={"_blank"}
-                        icon={<Stakeholder color="black" />}
-                      />
+                        referrerPolicy="noreferrer"
+                        icon={<Github color="black" />}
+                      ></Anchor>
+
+                      <Anchor
+                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
+                        target={"_blank"}
+                        referrerPolicy="noreferrer"
+
+                        icon={<Stakeholder />}
+                      ></Anchor>
                     </Box>
                   </CardFooter>
                 </Card>
@@ -798,50 +803,65 @@ const ImpactProjectCards = () => {
             </Box>
             <Box direction="row" gap="medium">
               <Box direction="row" gap="medium">
-                <Card height="medium" width="medium" background="white">
+                
+              <Card height="medium" width="medium" background="purple">
+                  <CardHeader pad="small">
+                    <Anchor href="https://stateful.art" target={"_blank"}>
+                      <Text textAlign="center" size="large" color={"white"}>
+                        stateful.art
+                      </Text>
+                    </Anchor>
+                  </CardHeader>
+
                   <CardBody background={"black"} pad="small">
                     <Box
                       align="center"
                       round="medium"
-                      pad={"small"}
                       animation={{
                         type: "pulse",
                         delay: 0,
                         duration: 1000,
                       }}
                     >
-                      <a
-                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        color="white"
-                      >
-                        <Image
-                          src="./impactProjects/demoverse-logo-transparent.png"
-                          height="160px"
-                          width="240px"
-                        ></Image>
-                      </a>
+                      {" "}
+                      <Image
+                        src="./impactProjects/start-no-logo-short.png"
+                        height="160px"
+                        width="160px"
+                      ></Image>
                     </Box>
                     <Text textAlign="center" size="large">
-                      world peace as a service, on blockchain.
-                      {/* <br></br>0 to billions to acknowledge, <br></br>0 to hundreds to seal it. */}
+                      connecting cities with <br></br>arts {"&"} rights
                     </Text>
                   </CardBody>
 
                   <CardFooter background="light-2">
-                    <Box direction="row" gap="medium" size="large">
+                    <Box
+                      direction="row"
+                      gap="medium"
+                      size="medium"
+                      pad={"xsmall"}
+                    >
                       <Anchor
-                        href="https://twitter.com/demoversal"
+                        href="https://stateful.art"
                         target={"_blank"}
-                        icon={<Twitter color="#1DA1F2" />}
+                        icon={<Cursor color="black" />}
                       ></Anchor>
 
                       <Anchor
-                        href="https://discord.gg/bdtUakkkUg"
+                        href="https://twitter.com/statefulArt"
                         target={"_blank"}
-                        referrerPolicy="noreferrer"
+                        icon={<Twitter color="#1DA1F2" />}
+                      ></Anchor>
+                      <Anchor
+                        href="https://github.com/stateful-art/"
+                        target={"_blank"}
+                        icon={<Github color="black" />}
+                      ></Anchor>
 
+                      <Anchor
+                        href="https://discord.gg/QStRgcNJV7"
+                        target={"_blank"}
                         icon={
                           <Image
                             src="./discord-logo.png"
@@ -850,21 +870,11 @@ const ImpactProjectCards = () => {
                           ></Image>
                         }
                       ></Anchor>
-
                       <Anchor
-                        href="https://github.com/demo-verse"
+                        href="https://miro.com/app/board/uXjVOXeggvw=/?invite_link_id=88536124274"
                         target={"_blank"}
-                        referrerPolicy="noreferrer"
-                        icon={<Github color="black" />}
-                      ></Anchor>
-
-                      <Anchor
-                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
-                        target={"_blank"}
-                        referrerPolicy="noreferrer"
-
-                        icon={<Stakeholder />}
-                      ></Anchor>
+                        icon={<Stakeholder color="black" />}
+                      />
                     </Box>
                   </CardFooter>
                 </Card>
