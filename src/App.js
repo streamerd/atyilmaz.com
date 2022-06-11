@@ -12,6 +12,7 @@ import {
   CardBody,
   CardFooter,
   Carousel,
+  Heading,
   Tabs,
   Tab,
   ResponsiveContext,
@@ -605,9 +606,9 @@ const ImpactProjectCards = () => {
                         color="white"
                       >
                         <Image
-                          src="./impactProjects/demoverse-logo-transparent.png"
-                          height="160px"
-                          width="240px"
+                          src="./impactProjects/dm.jpg"
+                          height="220px"
+                          width="220px"
                         ></Image>
                       </a>
                     </Box>
@@ -663,147 +664,7 @@ const ImpactProjectCards = () => {
                   </CardFooter>
                 </Card>
 
-                <Card height="medium" width="medium" background="black">
-                  <CardHeader pad="small" background="yellow">
-                    <Anchor
-                      color={"black"}
-                      href="https://twitter.com/EntsAreBack"
-                      target={"_blank"}
-                    >
-                      EntDAO{" "}
-                    </Anchor>
-                  </CardHeader>
-                  <Box
-                    align="center"
-                    round="medium"
-                    pad={"small"}
-                    animation={{
-                      type: "jiggle",
-                      delay: 0,
-                      duration: 2000,
-                    }}
-                  >
-                    <Image
-                      src="./impactProjects/entDAO_dotMatrix.jpeg"
-                      height="160px"
-                      width="160px"
-                    ></Image>
-                  </Box>
-                  <CardBody background={"black"} pad="small">
-                    {" "}
-                    <Text textAlign="center" size="large">
-                      nature with stakes, in offset decision-making
-                    </Text>
-                  </CardBody>
 
-                  <CardFooter background="light-2">
-                    <Box
-                      direction="row"
-                      gap="medium"
-                      size="large"
-                      pad={"xsmall"}
-                    >
-                      <Anchor
-                        href="https://twitter.com/entsAreback"
-                        target={"_blank"}
-                        icon={<Twitter color="#1DA1F2" />}
-                      ></Anchor>
-                      <Anchor
-                        href="https://discord.gg/fWunhCDhuy"
-                        target={"_blank"}
-                        icon={
-                          <Image
-                            src="./discord-logo.png"
-                            height={"24px"}
-                            width={"24px"}
-                          ></Image>
-                        }
-                      ></Anchor>
-                      <Anchor
-                        href="https://miro.com/app/board/uXjVOX1nmp0=/?invite_link_id=922627502511"
-                        target={"_blank"}
-                        icon={<Stakeholder color="black" />}
-                      />
-                    </Box>
-                  </CardFooter>
-                </Card>
-
-                <Card height="medium" width="medium" background="white">
-                  <CardHeader pad="small" background="black">
-                    <Anchor
-                      color={"white"}
-                      href="https://futurema.de"
-                      target={"_blank"}
-                    >
-                      <Text size="large">future, made</Text>
-                    </Anchor>
-                  </CardHeader>
-
-                  <Box
-                    align="center"
-                    round="medium"
-                    animation={{
-                      type: "slideLeft",
-                      delay: 0,
-                      duration: 24000,
-                    }}
-                  >
-                    <Image
-                      src="./impactProjects/future_made_logo.svg"
-                      height="160px"
-                      width="160px"
-                    ></Image>
-                  </Box>
-                  <CardBody background={"black"} pad="small">
-                    <Text textAlign="center" size="large">
-                      future art events, made co-imaginable
-                    </Text>
-                    <Box align="center">
-                      <Anchor
-                        href="https://vimeo.com/526183104"
-                        target={"_blank"}
-                      >
-                        {" "}
-                        ( demo )
-                      </Anchor>
-                    </Box>
-                  </CardBody>
-                  <CardFooter
-                    pad={{ horizontal: "xsmall" }}
-                    background="light-2"
-                  >
-                    <Box direction="row" gap="medium" pad={"xsmall"}>
-                      <Anchor
-                        href="https://futurema.de"
-                        target={"_blank"}
-                        icon={<Cursor color="#1DA1F2" />}
-                      />
-                      <Anchor
-                        href="https://github.com/future-made"
-                        target={"_blank"}
-                        icon={<Github color="black" />}
-                        hoverIndicator
-                      />
-
-                      <Anchor
-                        href="https://miro.com/app/board/o9J_lcIxk6U=/"
-                        target={"_blank"}
-                        icon={<Stakeholder color="black" />}
-                        hoverIndicator
-                      />
-                      <Anchor
-                        href="https://miro.com/app/board/o9J_ldhZvuk=/"
-                        target={"_blank"}
-                        icon={<BusinessService color="black" />}
-                      />
-                    </Box>
-                  </CardFooter>
-                </Card>
-              </Box>
-            </Box>
-            <Box direction="row" gap="medium">
-              <Box direction="row" gap="medium">
-                
               <Card height="medium" width="medium" background="purple">
                   <CardHeader pad="small">
                     <Anchor href="https://stateful.art" target={"_blank"}>
@@ -879,7 +740,149 @@ const ImpactProjectCards = () => {
                   </CardFooter>
                 </Card>
 
-                <Card height="medium" width="medium" background="black">
+{/*               
+
+                <Card height="medium" width="medium" background="white">
+                  <CardHeader pad="small" background="black">
+                    <Anchor
+                      color={"white"}
+                      href="https://futurema.de"
+                      target={"_blank"}
+                    >
+                      <Text size="large">future, made</Text>
+                    </Anchor>
+                  </CardHeader>
+
+                  <Box
+                    align="center"
+                    round="medium"
+                    animation={{
+                      type: "slideLeft",
+                      delay: 0,
+                      duration: 24000,
+                    }}
+                  >
+                    <Image
+                      src="./impactProjects/future_made_logo.svg"
+                      height="160px"
+                      width="160px"
+                    ></Image>
+                  </Box>
+                  <CardBody background={"black"} pad="small">
+                    <Text textAlign="center" size="large">
+                      future art events, made co-imaginable
+                    </Text>
+                    <Box align="center">
+                      <Anchor
+                        href="https://vimeo.com/526183104"
+                        target={"_blank"}
+                      >
+                        {" "}
+                        ( demo )
+                      </Anchor>
+                    </Box>
+                  </CardBody>
+                  <CardFooter
+                    pad={{ horizontal: "xsmall" }}
+                    background="light-2"
+                  >
+                    <Box direction="row" gap="medium" pad={"xsmall"}>
+                      <Anchor
+                        href="https://futurema.de"
+                        target={"_blank"}
+                        icon={<Cursor color="#1DA1F2" />}
+                      />
+                      <Anchor
+                        href="https://github.com/future-made"
+                        target={"_blank"}
+                        icon={<Github color="black" />}
+                        hoverIndicator
+                      />
+
+                      <Anchor
+                        href="https://miro.com/app/board/o9J_lcIxk6U=/"
+                        target={"_blank"}
+                        icon={<Stakeholder color="black" />}
+                        hoverIndicator
+                      />
+                      <Anchor
+                        href="https://miro.com/app/board/o9J_ldhZvuk=/"
+                        target={"_blank"}
+                        icon={<BusinessService color="black" />}
+                      />
+                    </Box>
+                  </CardFooter>
+                </Card> */}
+              </Box>
+            </Box>
+            <Box direction="row" gap="medium">
+              <Box direction="row" gap="medium">
+              <Card height="medium" width="medium" background="black">
+                  <CardHeader pad="small" background="yellow">
+                    <Anchor
+                      color={"black"}
+                      href="https://twitter.com/EntsAreBack"
+                      target={"_blank"}
+                    >
+                      EntDAO{" "}
+                    </Anchor>
+                  </CardHeader>
+                  <Box
+                    align="center"
+                    round="medium"
+                    pad={"small"}
+                    animation={{
+                      type: "jiggle",
+                      delay: 0,
+                      duration: 2000,
+                    }}
+                  >
+                    <Image
+                      src="./impactProjects/entDAO_dotMatrix.jpeg"
+                      height="160px"
+                      width="160px"
+                    ></Image>
+                  </Box>
+                  <CardBody background={"black"} pad="small">
+                    {" "}
+                    <Text textAlign="center" size="large">
+                      nature with stakes, in offset decision-making
+                    </Text>
+                  </CardBody>
+
+                  <CardFooter background="light-2">
+                    <Box
+                      direction="row"
+                      gap="medium"
+                      size="large"
+                      pad={"xsmall"}
+                    >
+                      <Anchor
+                        href="https://twitter.com/entsAreback"
+                        target={"_blank"}
+                        icon={<Twitter color="#1DA1F2" />}
+                      ></Anchor>
+                      <Anchor
+                        href="https://discord.gg/fWunhCDhuy"
+                        target={"_blank"}
+                        icon={
+                          <Image
+                            src="./discord-logo.png"
+                            height={"24px"}
+                            width={"24px"}
+                          ></Image>
+                        }
+                      ></Anchor>
+                      <Anchor
+                        href="https://miro.com/app/board/uXjVOX1nmp0=/?invite_link_id=922627502511"
+                        target={"_blank"}
+                        icon={<Stakeholder color="black" />}
+                      />
+                    </Box>
+                  </CardFooter>
+                </Card>
+
+                {/* <Card height="medium" width="medium" background="black">
                   <CardHeader pad="small" background="black">
                     <Text size="large">LocalZines </Text>
                   </CardHeader>
@@ -910,27 +913,32 @@ const ImpactProjectCards = () => {
                       </Anchor>
                     </Box>
                   </CardFooter>
-                </Card>
+                </Card> */}
 
                 <Card height="medium" width="medium" background="black">
                   <CardBody background={"black"}>
                     <Box
                       align="center"
+                      margin={"medium"}
                       animation={{
                         type: "pulse",
                         delay: 0,
                         duration: 12000,
                       }}
                     >
-                      <Image
+                      <Heading size="" textAlign="center">offset <br></br> movement</Heading>
+                      {/* <Image
                         src="./impactProjects/offsetmovement-logo-transparent.png"
-                        height="160px"
-                        width="220px"
-                      ></Image>
+                        height="220px"
+                        width="260px"
+                      ></Image> */}
                     </Box>
+                    <Box margin={"xxlarge"}>
+
                     <Text textAlign="center" size="large">
                       cooking new paradigms
                     </Text>
+                    </Box>
                   </CardBody>
                   <CardFooter
                     pad={{ horizontal: "xsmall" }}
