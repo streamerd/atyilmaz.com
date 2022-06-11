@@ -598,7 +598,7 @@ const ImpactProjectCards = () => {
 
                       
                       <a
-                        href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
+                        href="https://demover.se"
                         target={"_blank"}
                         rel="noreferrer"
                         color="white"
@@ -683,11 +683,17 @@ const ImpactProjectCards = () => {
                       }}
                     >
                       {" "}
+                      <a
+                        href="https://stateful.art"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        color="white"
+                      >
                       <Image
                         src="./impactProjects/start-no-logo-short.png"
                         height="160px"
                         width="160px"
-                      ></Image>
+                      ></Image> </a>
                     </Box>
                     <Text textAlign="center" size="large">
                       connecting cities with <br></br>arts {"&"} rights
@@ -835,11 +841,19 @@ const ImpactProjectCards = () => {
                       duration: 2000,
                     }}
                   >
+                      <a
+                        href="https://twitter.com/EntsAreBack"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        color="white"
+                      >
+
                     <Image
                       src="./impactProjects/entDAO_dotMatrix.jpeg"
                       height="160px"
                       width="160px"
                     ></Image>
+                      </a>
                   </Box>
                   <CardBody background={"black"} pad="small">
                     {" "}
@@ -917,7 +931,7 @@ const ImpactProjectCards = () => {
                   <CardBody background={"black"}>
                     <Box
                       align="center"
-                      margin={"medium"}
+                      margin={"large"}
                       animation={{
                         type: "pulse",
                         delay: 0,
@@ -931,7 +945,7 @@ const ImpactProjectCards = () => {
                         width="260px"
                       ></Image> */}
                     </Box>
-                    <Box margin={"xxlarge"}>
+                    <Box margin={"small"}>
 
                     <Text textAlign="center" size="large">
                       cooking new paradigms
@@ -939,7 +953,7 @@ const ImpactProjectCards = () => {
                     </Box>
                   </CardBody>
                   <CardFooter
-                    pad={{ horizontal: "xsmall" }}
+                    pad={{ horizontal: "small" }}
                     background="light-2"
                   >
                     <Box direction="row" gap="medium">
