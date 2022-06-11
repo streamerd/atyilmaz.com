@@ -19,8 +19,6 @@ import {
   Paragraph,
 } from "grommet";
 import {
-  Actions,
-  BusinessService,
   Cursor,
   Github,
   Stakeholder,
