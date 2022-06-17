@@ -18,12 +18,7 @@ import {
   ResponsiveContext,
   Paragraph,
 } from "grommet";
-import {
-  Cursor,
-  Github,
-  Stakeholder,
-  Twitter,
-} from "grommet-icons";
+import { Cursor, Github, Stakeholder, Twitter } from "grommet-icons";
 import React from "react";
 
 const theme = {
@@ -70,6 +65,7 @@ function App() {
         </Box>
 
         <Box
+          height={"xlarge"}
           direction="row"
           align="start"
           // height={"medium"}
@@ -110,7 +106,7 @@ function App() {
                     "you don't need eyes to see, you need vision".
                   </Text>
                 </Box>
-                <Box background={"black"}>
+                <Box background={"black"} height="xxsmall">
                   <Anchor href="https://www.youtube.com/embed/cyQ0s0J1fhY">
                     {"> "}listen {">"}
                   </Anchor>
@@ -124,8 +120,11 @@ function App() {
                     "you don't need eyes to see, you need vision".
                   </Text>
                 </Box>
-                <Box background={"black"}>
-                  <Anchor href="https://www.youtube.com/embed/cyQ0s0J1fhY">
+                <Box background={"black"} height="xxsmall">
+                  <Anchor
+                    margin={"small"}
+                    href="https://www.youtube.com/embed/cyQ0s0J1fhY"
+                  >
                     {"> "}listen {">"}
                   </Anchor>
                 </Box>
@@ -145,33 +144,33 @@ const MoondogCarousel = () => {
         size === "small" ? (
           <Box>
             <Carousel>
-              <Box pad="xlarge" background="black">
+              <Box pad="large" background="black">
                 <Image
                   src="./artProjects/moondog/a_tribute_to_moondog_angle_1.jpeg"
-                  height="120px"
-                  width="120px"
+                  height="160px"
+                  width="160px"
                 ></Image>
               </Box>
-              <Box pad="xlarge" background="accent-2">
-                <Image
+              <Box pad="large" background="black"  >
+                <Image 
                   src="./artProjects/moondog/a_tribute_to_moondog_angle_2.jpeg"
-                  height="120px"
-                  width="120px"
+                  height="160px"
+                  width="160px"
                 ></Image>
               </Box>
-              <Box pad="xlarge" background="accent-3">
+              <Box pad="large" background="black">
                 <Image
                   src="./artProjects/moondog/a_tribute_to_moondog_angle_3.jpeg"
-                  height="120px"
-                  width="120px"
+                  height="160px"
+                  width="160px"
                 ></Image>{" "}
               </Box>
 
-              <Box pad="xlarge" background="accent-3">
+              <Box pad="large" background="black">
                 <Image
                   src="./artProjects/moondog/a_tribute_to_moondog_angle_4.jpeg"
-                  height="120px"
-                  width="120px"
+                  height="160px"
+                  width="160px"
                 ></Image>{" "}
               </Box>
             </Carousel>
@@ -230,55 +229,95 @@ const VisualArtworkCards = () => {
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
-          <Box direction="row" gap="xsmall" elevation="">
+          <Box direction="column" gap="large" elevation="">
             <Card height="small" width="medium" background="light-1">
-              <CardHeader pad="small">
-                <Anchor
-                  color="black"
-                  href="https://www.behance.net/gallery/108624099/A-Tribute-to-Moondog"
-                  target={"_blank"}
-                >
-                  <Text size="small"> a tribute to Moondog </Text>
-                </Anchor>
-                <CardBody>
-                  <MoondogCarousel />
-                </CardBody>
-              </CardHeader>
+            <CardHeader pad="small">
+              <Anchor href="https://www.behance.net/gallery/108624099/A-Tribute-to-Moondog" target={"_blank"} >
 
-              <CardBody pad="small" background={"black"}>
-                <Image
-                  src="./artProjects/moondog/a_tribute_to_moondog_angle_1.jpeg"
-                  height="380px"
-                  width="380px"
-                ></Image>
+              a tribute to moondog 
+              </Anchor>
+              </CardHeader>
+              <CardBody>
+                <MoondogCarousel />
               </CardBody>
             </Card>
-            <Card height="medium" width="medium" background="#0aa3cf">
+
+            <Card  width="medium" background="black">
               <CardHeader pad="small">selbst-portrait mit Kater </CardHeader>
 
               <CardBody pad="small" background="black">
                 <Image
                   src="./artProjects/selbstportrait/selbstportraet_mit_kater_side_1.jpeg"
-                  height="360px"
-                  width="360px"
+                  height="220px"
+                  width="220px"
                 ></Image>
               </CardBody>
             </Card>
+
             <Card height="large" width="medium" background="red">
               <CardHeader pad="small">
                 <Text color={"black"}>brother-bankless </Text>
               </CardHeader>
 
-              <CardBody pad="medium" background="black">
+              <CardBody background="black">
                 <Image
                   src="./artProjects/brother-bankless.png"
-                  height="680px"
-                  width="360px"
+                  height="480px"
+                  width="200px"
                 ></Image>
               </CardBody>
             </Card>
           </Box>
         ) : (
+          // <Box direction="row" gap="xsmall" elevation="">
+          //   <Card height="small" width="medium" background="light-1">
+          //     <CardHeader pad="small">
+          //       <Anchor
+          //         color="black"
+          //         href="https://www.behance.net/gallery/108624099/A-Tribute-to-Moondog"
+          //         target={"_blank"}
+          //       >
+          //         <Text size="small"> a tribute to Moondog </Text>
+          //       </Anchor>
+          //       <CardBody>
+          //         <MoondogCarousel />
+          //       </CardBody>
+          //     </CardHeader>
+
+          //     <CardBody pad="small" background={"black"}>
+          //       <Image
+          //         src="./artProjects/moondog/a_tribute_to_moondog_angle_1.jpeg"
+          //         height="380px"
+          //         width="380px"
+          //       ></Image>
+          //     </CardBody>
+          //   </Card>
+          //   <Card height="medium" width="medium" background="#0aa3cf">
+          //     <CardHeader pad="small">selbst-portrait mit Kater </CardHeader>
+
+          //     <CardBody pad="small" background="black">
+          //       <Image
+          //         src="./artProjects/selbstportrait/selbstportraet_mit_kater_side_1.jpeg"
+          //         height="360px"
+          //         width="360px"
+          //       ></Image>
+          //     </CardBody>
+          //   </Card>
+          //   <Card height="large" width="medium" background="red">
+          //     <CardHeader pad="small">
+          //       <Text color={"black"}>brother-bankless </Text>
+          //     </CardHeader>
+
+          //     <CardBody pad="medium" background="black">
+          //       <Image
+          //         src="./artProjects/brother-bankless.png"
+          //         height="680px"
+          //         width="360px"
+          //       ></Image>
+          //     </CardBody>
+          //   </Card>
+          // </Box>
+
           <Box direction="column">
             <Box direction="row" gap="medium" elevation="">
               <Box direction="column" gap="medium">
@@ -305,19 +344,18 @@ const VisualArtworkCards = () => {
                   // icon={<Cursor color="white" />}
                  >devPunks</Anchor> */}
 
-<Anchor  href="https://shy-meadow-1354.on.fleek.co/"
+                        <Anchor
+                          href="https://shy-meadow-1354.on.fleek.co/"
                           target={"_blank"}
-                           >
-<Text size="large" color={"pink"}>
-                          dev
-                          <Text size="large" color={"red"}>
-                            Punks
+                        >
+                          <Text size="large" color={"pink"}>
+                            dev
+                            <Text size="large" color={"red"}>
+                              Punks
+                            </Text>
                           </Text>
-                        </Text>
+                        </Anchor>
 
-</Anchor>
-
-                        
                         <Anchor
                           href="https://github.com/BlockDevsUnited/dev-punks"
                           target={"_blank"}
@@ -475,7 +513,38 @@ const ImpactProjectCards = () => {
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
-          <Box direction="column" margin={"large"} gap={"large"}>
+          <Box direction="column" margin={"small"} gap={"medium"}>
+            <Card height="small" width="small" background="purple">
+              <CardHeader pad="small" background={"black"}>
+                demoVerse{" "}
+              </CardHeader>
+
+              <CardBody background={"black"} pad="medium">
+                world peace, as a service, on blockchain
+              </CardBody>
+              <CardFooter background="light-2">
+                <Anchor
+                  href="https://demover.se"
+                  target={"_blank"}
+                  icon={<Cursor color="black" />}
+                  hoverIndicator
+                ></Anchor>
+                <Anchor
+                  href="https://github.com/demo-verse"
+                  target={"_blank"}
+                  icon={<Github color="black" />}
+                  hoverIndicator
+                ></Anchor>
+
+                <Anchor
+                  href="https://twitter.com/demoversal"
+                  target={"_blank"}
+                  icon={<Twitter color="#1DA1F2" />}
+                  hoverIndicator
+                ></Anchor>
+              </CardFooter>
+            </Card>
+
             <Card height="small" width="small" background="purple">
               <CardHeader pad="small" background={""}>
                 stateful.art{" "}
@@ -534,15 +603,39 @@ const ImpactProjectCards = () => {
                 ></Anchor>
 
                 <Anchor
-                  href="https://miro.com/app/board/uXjVOX1nmp0=/?invite_link_id=643006029904"
+                  href="https://github.com/ent-dao"
                   target={"_blank"}
-                >
-                  design
-                </Anchor>
+                  icon={<Github />}
+                />
               </CardFooter>
             </Card>
 
-            <Card height="small" width="small" background={"black"}>
+            <Card height="small" width="small" background="red">
+              <CardHeader pad="small">
+                <Anchor href="https://offsetmovement.org" target={"_blank"}>
+                  <Text color={"white"}>offset movement</Text>
+                </Anchor>
+              </CardHeader>
+
+              <CardBody background={"black"} pad="large">
+                cooking new paradigms
+              </CardBody>
+              <CardFooter background="light-2">
+                <Anchor
+                  href="https://twitter.com/offset_movement"
+                  target={"_blank"}
+                  icon={<Twitter color="#1DA1F2" />}
+                ></Anchor>
+
+                <Anchor
+                  href="github.com/offset-movement"
+                  target={"_blank"}
+                  icon={<Github />}
+                />
+              </CardFooter>
+            </Card>
+
+            {/* <Card height="small" width="small" background={"black"}>
               <CardHeader pad="small">future, made </CardHeader>
 
               <CardBody background={"white"} pad="medium">
@@ -576,14 +669,13 @@ const ImpactProjectCards = () => {
                   hoverIndicator
                 ></Anchor>
               </CardFooter>
-            </Card>
+            </Card> */}
           </Box>
         ) : (
           <Box direction="column" gap="large">
             <Box direction="row" gap="medium">
               <Box direction="row" gap="medium">
-
-              <Card height="medium" width="medium" background="white">
+                <Card height="medium" width="medium" background="white">
                   <CardBody background={"black"} pad="small">
                     <Box
                       align="center"
@@ -595,8 +687,6 @@ const ImpactProjectCards = () => {
                         duration: 1000,
                       }}
                     >
-
-                      
                       <a
                         href="https://demover.se"
                         target={"_blank"}
@@ -605,8 +695,8 @@ const ImpactProjectCards = () => {
                       >
                         <Image
                           src="./impactProjects/dm.jpg"
-                          height="220px"
-                          width="220px"
+                          height="200px"
+                          width="200px"
                         ></Image>
                       </a>
                     </Box>
@@ -618,8 +708,7 @@ const ImpactProjectCards = () => {
 
                   <CardFooter background="light-2">
                     <Box direction="row" gap="medium" size="large">
-
-                    <Anchor
+                      <Anchor
                         href="https://demover.se"
                         target={"_blank"}
                         icon={<Cursor color="black" />}
@@ -634,7 +723,6 @@ const ImpactProjectCards = () => {
                         href="https://discord.gg/bdtUakkkUg"
                         target={"_blank"}
                         referrerPolicy="noreferrer"
-
                         icon={
                           <Image
                             src="./discord-logo.png"
@@ -655,19 +743,17 @@ const ImpactProjectCards = () => {
                         href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=132783006721"
                         target={"_blank"}
                         referrerPolicy="noreferrer"
-
                         icon={<Stakeholder />}
                       ></Anchor>
                     </Box>
                   </CardFooter>
                 </Card>
 
-
-              <Card height="medium" width="medium" background="purple">
+                <Card height="medium" width="medium" background="purple">
                   <CardHeader pad="small">
                     <Anchor href="https://stateful.art" target={"_blank"}>
                       <Text textAlign="center" size="large" color={"white"}>
-                        stateful.art
+                        start
                       </Text>
                     </Anchor>
                   </CardHeader>
@@ -689,14 +775,15 @@ const ImpactProjectCards = () => {
                         rel="noreferrer"
                         color="white"
                       >
-                      <Image
-                        src="./impactProjects/start-no-logo-short.png"
-                        height="160px"
-                        width="160px"
-                      ></Image> </a>
+                        <Image
+                          src="https://avatars.githubusercontent.com/u/89787957?s=400&u=8a6e55bc71bbfb7eb53e0971606b8dc2fe624f7b&v=4"
+                          height="160px"
+                          width="160px"
+                        ></Image>{" "}
+                      </a>
                     </Box>
                     <Text textAlign="center" size="large">
-                      connecting cities with <br></br>arts {"&"} rights
+                      connecting cities with <br></br>arts {"&"} rights.
                     </Text>
                   </CardBody>
 
@@ -744,7 +831,7 @@ const ImpactProjectCards = () => {
                   </CardFooter>
                 </Card>
 
-{/*               
+                {/*               
 
                 <Card height="medium" width="medium" background="white">
                   <CardHeader pad="small" background="black">
@@ -821,7 +908,7 @@ const ImpactProjectCards = () => {
             </Box>
             <Box direction="row" gap="medium">
               <Box direction="row" gap="medium">
-              <Card height="medium" width="medium" background="black">
+                <Card height="medium" width="medium" background="black">
                   <CardHeader pad="small" background="yellow">
                     <Anchor
                       color={"black"}
@@ -841,24 +928,23 @@ const ImpactProjectCards = () => {
                       duration: 2000,
                     }}
                   >
-                      <a
-                        href="https://twitter.com/EntsAreBack"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        color="white"
-                      >
-
-                    <Image
-                      src="./impactProjects/entDAO_dotMatrix.jpeg"
-                      height="160px"
-                      width="160px"
-                    ></Image>
-                      </a>
+                    <a
+                      href="https://twitter.com/EntsAreBack"
+                      target={"_blank"}
+                      rel="noreferrer"
+                      color="white"
+                    >
+                      <Image
+                        src="./impactProjects/entDAO_dotMatrix.jpeg"
+                        height="160px"
+                        width="160px"
+                      ></Image>
+                    </a>
                   </Box>
                   <CardBody background={"black"} pad="small">
                     {" "}
                     <Text textAlign="center" size="large">
-                      nature with stakes, in offset decision-making
+                      nature, is action.
                     </Text>
                   </CardBody>
 
@@ -931,25 +1017,21 @@ const ImpactProjectCards = () => {
                   <CardBody background={"black"}>
                     <Box
                       align="center"
-                      margin={"large"}
+                      margin={"medium"}
                       animation={{
                         type: "pulse",
                         delay: 0,
                         duration: 12000,
                       }}
                     >
-                      <Heading size="" textAlign="center">offset <br></br> movement</Heading>
-                      {/* <Image
-                        src="./impactProjects/offsetmovement-logo-transparent.png"
-                        height="220px"
-                        width="260px"
-                      ></Image> */}
+                      <Text size="xxlarge" margin={"large"} textAlign="center">
+                        offset <br></br> movement
+                      </Text>
                     </Box>
                     <Box margin={"small"}>
-
-                    <Text textAlign="center" size="large">
-                      cooking new paradigms
-                    </Text>
+                      <Text textAlign="center" size="large">
+                        cooking new paradigms
+                      </Text>
                     </Box>
                   </CardBody>
                   <CardFooter
@@ -1014,15 +1096,9 @@ const RootTabs = () => {
                 <AudioWorkCards />
               </Box>
             </Tab>
-            {/* <Tab title="uncategorized">
-              <Box pad="medium"></Box>
-            </Tab> */}
           </Tabs>
         </Box>
       </Tab>
-      {/* <Tab title="uncategorized">
-        <Box pad="medium"></Box>
-      </Tab> */}
     </Tabs>
   );
 };
@@ -1151,14 +1227,24 @@ const Links = () => {
                 >
                   instagram
                 </Anchor>
-                <Anchor
-                  href="https://www.linkedin.com/in/abbas-tolgay-yilmaz-0x0"
-                  target="_blank"
-                  color="white"
-                  size="medium"
-                >
-                  linkedIn
-                </Anchor>{" "}
+                <Box direction="row">
+                  <Anchor
+                    href="https://www.linkedin.com/in/abbas-tolgay-yilmaz-0x0"
+                    target="_blank"
+                    color="white"
+                    size="medium"
+                  >
+                    linkedIn /
+                  </Anchor>{" "}
+                  <Anchor
+                    href="https://atyilmaz.com/cv/atyilmaz_resume_22.pdf"
+                    target="_blank"
+                    color="red"
+                    size="medium"
+                  >
+                    /cv
+                  </Anchor>{" "}
+                </Box>
               </Box>
 
               <Box
@@ -1179,10 +1265,17 @@ const Links = () => {
                 tag="footer"
                 direction="column"
                 justify="center"
-                pad="small"
                 gap="medium"
                 background="black"
               >
+                <Box size="medium">
+                  <Anchor href="https://github.com/streamerd" target={"_blank"}>
+                    <Image
+                      src="https://ghchart.rshah.org/streamerd"
+                      width={"240px"}
+                    ></Image>
+                  </Anchor>
+                </Box>
                 <Anchor
                   href="https://github.com/streamerd"
                   target="_blank"
@@ -1207,33 +1300,33 @@ const Links = () => {
                 >
                   instagram
                 </Anchor>{" "}
-                <Anchor
-                  href="https://www.linkedin.com/in/abbas-tolgay-yilmaz-0x0"
-                  target="_blank"
-                  color="#0072b1"
-                  size="large"
-                >
-                  linkedIn
-                </Anchor>
+                <Box direction="row">
+                  <Anchor
+                    href="https://www.linkedin.com/in/abbas-tolgay-yilmaz-0x0"
+                    target="_blank"
+                    color="white"
+                    size="large"
+                  >
+                    linkedIn /
+                  </Anchor>{" "}
+                  <Anchor
+                    href="https://atyilmaz.com/cv/atyilmaz_resume_22.pdf"
+                    target="_blank"
+                    color="red"
+                    size="large"
+                  >
+                    / cv
+                  </Anchor>{" "}
+                </Box>
               </Box>
               <Box
                 tag="footer"
                 direction="row"
-                pad="small"
                 gap="small"
                 //flex={true}
                 background="black"
               >
                 <Text size="large">tolgay@atyilmaz.com</Text>
-              </Box>
-
-              <Box size="medium">
-                <Anchor href="https://github.com/streamerd" target={"_blank"}>
-                  <Image
-                    src="https://ghchart.rshah.org/streamerd"
-                    width={"480px"}
-                  ></Image>
-                </Anchor>
               </Box>
             </Box>
           )
@@ -1259,12 +1352,11 @@ const RabbitHoledCard = () => {
                   ></Image>
                 </Box>
                 <Box align="center" margin={"medium"}>
-                  <Text size="small" color="black">
+                  <Text size="medium" color="black" textAlign="center">
                     {" "}
-                    Abbas Tolgay{" "}
+                    Abbas Tolgay <br></br>
+                    Yılmaz
                   </Text>{" "}
-                  <br></br>
-                  Yılmaz
                 </Box>
               </Box>
             </CardBody>
@@ -1286,14 +1378,9 @@ const RabbitHoledCard = () => {
                   ></Image>
                 </Box>
                 <Box align="center" margin={"medium"}>
-                  <Text size="large" color="black">
+                  <Text size="large" color="black" textAlign="center">
                     {" "}
-                    Abbas Tolgay{" "}
-                  </Text>{" "}
-                  <br></br>
-                  <Text size="large" color="black">
-                    {" "}
-                    Yılmaz
+                    Abbas Tolgay <br></br> Yılmaz
                   </Text>
                 </Box>
               </Box>
