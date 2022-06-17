@@ -12,7 +12,6 @@ import {
   CardBody,
   CardFooter,
   Carousel,
-  Heading,
   Tabs,
   Tab,
   ResponsiveContext,
